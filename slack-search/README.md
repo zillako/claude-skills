@@ -21,7 +21,7 @@ See [설치가이드.md](./설치가이드.md) for detailed Korean installation 
 If you prefer to configure manually:
 
 1. https://api.slack.com/apps 에서 앱 생성
-2. OAuth Scopes 추가:
+2. User Token Scopes 추가:
    - `channels:history`
    - `channels:read`
    - `groups:history`
@@ -33,7 +33,7 @@ If you prefer to configure manually:
    - `search:read`
    - `users:read`
 3. Install to Workspace
-4. Bot User OAuth Token 복사
+4. User OAuth Token 복사
 
 ### Token Configuration
 
@@ -44,7 +44,7 @@ mkdir -p ~/.slack
 # Token 설정
 cat > ~/.slack/config.json << 'EOF'
 {
-  "token": "xoxb-your-token-here",
+  "token": "xoxp-your-token-here",
   "workspace": "your-workspace-name"
 }
 EOF

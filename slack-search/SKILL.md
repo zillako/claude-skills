@@ -73,7 +73,7 @@ cd slack-search-v1.1.0
 ### 1. Slack App 생성
 
 1. https://api.slack.com/apps 에서 새 앱 생성
-2. OAuth & Permissions 페이지에서 다음 scopes 추가:
+2. OAuth & Permissions 페이지에서 **User Token Scopes** 섹션에 다음 scopes 추가:
    ```
    channels:history
    channels:read
@@ -88,7 +88,7 @@ cd slack-search-v1.1.0
    users:read.email
    ```
 3. Install App to Workspace
-4. Bot User OAuth Token 복사 (xoxb-로 시작)
+4. User OAuth Token 복사 (xoxp-로 시작)
 
 ### 2. Token 설정
 
@@ -99,7 +99,7 @@ Token을 안전하게 저장:
 mkdir -p ~/.slack
 cat > ~/.slack/config.json << 'EOF'
 {
-  "token": "xoxb-your-token-here",
+  "token": "xoxp-your-token-here",
   "workspace": "your-workspace-name"
 }
 EOF
@@ -453,7 +453,7 @@ try {
 
 ✅ **Setup Validation**
 - Token 파일 존재 확인 (`~/.slack/config.json`)
-- Token 형식 검증 (`xoxb-` prefix)
+- Token 형식 검증 (`xoxp-` prefix)
 - API 연결 테스트 (`auth.test` 호출)
 
 ✅ **Request Validation**

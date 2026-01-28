@@ -1,12 +1,10 @@
 ---
 name: slack-search
-description: |
-  Slack 워크스페이스에서 메시지를 조회하고 검색하는 skill.
-  채널 목록, 메시지 히스토리, DM 조회, 키워드 검색, 스레드 조회, 날짜 필터링을 지원합니다.
+description: "Slack 워크스페이스에서 메시지를 조회하고 검색하는 skill. 채널 목록, 메시지 히스토리, DM 조회, 키워드 검색, 스레드 조회, 날짜 필터링을 지원합니다."
 license: MIT
 allowed-tools: Bash Read Write TodoWrite
 metadata:
-  version: "1.2.0"
+  version: "2.0.0"
   complexity: 0.5
   agentic_patterns:
     - plan-then-execute
@@ -525,11 +523,12 @@ try {
 
 ---
 
-**Version**: 1.1.0
-**Last Updated**: 2026-01-27
+**Version**: 2.0.0
+**Last Updated**: 2026-01-28
 **Complexity**: 0.5 (Moderate)
 **Patterns Applied**: plan-then-execute, dynamic-context-injection, llm-friendly-api-design
 
 **Changelog**:
+- v2.0.0 (2026-01-28): Plugin System migration (breaking changes)
 - v1.1.0 (2026-01-27): 날짜 검색 필터 설명 추가 (`on:`, `after:`, `before:`)
 - v1.0.0 (2026-01-12): 초기 버전

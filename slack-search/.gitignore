@@ -1,0 +1,18 @@
+# Slack credentials
+config.json
+
+# Local testing
+test-*.sh
+*.log
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Build artifacts
+slack-search-v*.tar.gz
+slack-search-v*.zip
+*.sha256

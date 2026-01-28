@@ -1,28 +1,25 @@
 ---
-skill: slack-search
-scope: user
+name: slack-search
 description: |
   Slack 워크스페이스에서 메시지를 조회하고 검색하는 skill.
   채널 목록, 메시지 히스토리, DM 조회, 키워드 검색, 스레드 조회, 날짜 필터링을 지원합니다.
-tools:
-  - Bash
-  - Read
-  - Write
-  - TodoWrite
-version: 1.1.0
-complexity: 0.5
-agentic_patterns:
-  - plan-then-execute
-  - dynamic-context-injection
-  - llm-friendly-api-design
-examples:
-  - trigger: "Slack에서 'OneApp' 키워드로 메시지 검색해줘"
-  - trigger: "Slack #general 채널의 최근 메시지 보여줘"
-  - trigger: "Slack에서 종오님이 보낸 메시지 찾아줘"
-  - trigger: "민규님과의 DM에서 1월 23일 대화 찾아줘"
-  - trigger: "서민규님과 주고받은 DM 메시지 검색해줘"
-  - trigger: "오늘 Slack에서 내가 보낸 메시지 찾아줘"
-  - trigger: "2026-01-27 Slack 활동 검색해줘"
+license: MIT
+allowed-tools: Bash Read Write TodoWrite
+metadata:
+  version: "1.2.0"
+  complexity: 0.5
+  agentic_patterns:
+    - plan-then-execute
+    - dynamic-context-injection
+    - llm-friendly-api-design
+  examples:
+    - trigger: "Slack에서 'OneApp' 키워드로 메시지 검색해줘"
+    - trigger: "Slack #general 채널의 최근 메시지 보여줘"
+    - trigger: "Slack에서 종오님이 보낸 메시지 찾아줘"
+    - trigger: "민규님과의 DM에서 1월 23일 대화 찾아줘"
+    - trigger: "서민규님과 주고받은 DM 메시지 검색해줘"
+    - trigger: "오늘 Slack에서 내가 보낸 메시지 찾아줘"
+    - trigger: "2026-01-27 Slack 활동 검색해줘"
 ---
 
 # Slack Search

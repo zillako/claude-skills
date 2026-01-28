@@ -1,0 +1,15 @@
+{
+  "name": "claude-skills",
+  "description": "Collection of Claude Code skills and plugins by zillako",
+  "author": "zillako",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zillako/claude-skills"
+  },
+  "plugins": [
+    {
+      "name": "slack-search",
+      "path": "plugins/slack-search"
+    }
+  ]
+}

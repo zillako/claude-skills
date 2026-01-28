@@ -1,0 +1,13 @@
+{
+  "name": "slack-search",
+  "version": "2.0.0",
+  "description": "Slack 워크스페이스에서 메시지를 조회하고 검색하는 skill. 채널 목록, 메시지 히스토리, DM 조회, 키워드 검색, 스레드 조회, 날짜 필터링을 지원합니다.",
+  "author": "zillako",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zillako/claude-skills"
+  },
+  "skills": ["slack-search"],
+  "commands": ["slack-setup"]
+}

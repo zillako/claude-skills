@@ -1,0 +1,23 @@
+# Claude Code generated files
+CLAUDE.md
+**/CLAUDE.md
+
+# Package files (generated from source)
+*.tar.gz
+*.zip
+*.sha256
+
+# Config files (contain sensitive tokens)
+config.json
+.slack/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

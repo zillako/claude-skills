@@ -7,11 +7,14 @@ Slack API를 활용하여 워크스페이스의 메시지를 조회하고 검색
 ### Download and Install
 
 ```bash
-# Download and install
-wget https://github.com/zillako/slack-search-skill/releases/download/v1.1.0/slack-search-v1.1.0.tar.gz
-tar -xzf slack-search-v1.1.0.tar.gz
-cd slack-search-v1.1.0
-./install.sh
+# Add marketplace
+/plugin marketplace add https://github.com/zillako/claude-skills
+
+# Install plugin
+/plugin install slack-search
+
+# Configure
+/slack-setup
 ```
 
 See [설치가이드.md](./설치가이드.md) for detailed Korean installation guide.
@@ -79,7 +82,7 @@ Once configured, use the skill in Claude Code like this:
 ## Requirements
 
 - Slack workspace 접근 권한
-- Slack Bot User OAuth Token
+- Slack User OAuth Token
 - curl (API 호출용)
 - jq (JSON 파싱용, 선택사항)
 
@@ -88,8 +91,8 @@ Once configured, use the skill in Claude Code like this:
 Complete documentation is available in:
 
 - **[설치가이드.md](./설치가이드.md)** - Detailed Korean installation guide with troubleshooting
-- **[SKILL.md](./SKILL.md)** - Comprehensive API reference and usage examples
-- **[examples/](./examples/)** - Sample scripts and usage patterns
+- **[SKILL.md](./skills/slack-search/SKILL.md)** - Comprehensive API reference and usage examples
+- **[examples/](./skills/slack-search/examples/)** - Sample scripts and usage patterns
 
 ## Architecture
 
@@ -181,8 +184,8 @@ curl -X GET https://slack.com/api/conversations.list \
 
 ## Version
 
-- **Current**: 1.1.0
-- **Last Updated**: 2026-01-12
+- **Current**: 2.0.0
+- **Last Updated**: 2026-01-28
 - **Complexity**: 0.5 (Moderate)
 
 ## License

@@ -28,12 +28,16 @@ Slack API를 활용하여 워크스페이스의 메시지를 조회하고 검색
 
 For complete installation instructions, see [설치가이드.md](./설치가이드.md).
 
-**Quick install**:
+**Installation**:
 ```bash
-wget https://github.com/zillako/slack-search-skill/releases/download/v1.1.0/slack-search-v1.1.0.tar.gz
-tar -xzf slack-search-v1.1.0.tar.gz
-cd slack-search-v1.1.0
-./install.sh
+# Add claude-skills marketplace
+/plugin marketplace add https://github.com/zillako/claude-skills
+
+# Install slack-search plugin
+/plugin install slack-search
+
+# Configure with your Slack credentials
+/slack-setup
 ```
 
 ## Core Capabilities

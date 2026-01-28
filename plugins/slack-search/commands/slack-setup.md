@@ -22,7 +22,7 @@ Slack Search skill을 사용하기 위한 초기 설정을 안내합니다.
    - 사용자에게: "User OAuth Token을 준비하셨나요? (예/아니오)"
 
 만약 위 단계를 완료하지 않았다면, 먼저 설치가이드를 읽어보시기 바랍니다:
-- Read tool로 `/Users/musinsa/claude-skills/plugins/slack-search/설치가이드.md` 읽기
+- Read tool로 plugin 디렉토리의 `설치가이드.md` 읽기 (경로는 Claude가 자동으로 해결)
 
 ## Setup Steps
 
@@ -132,4 +132,4 @@ curl -X GET "https://slack.com/api/conversations.list?types=public_channel,priva
 ## Troubleshooting
 
 문제가 발생하면 설치가이드의 FAQ 섹션을 참조하세요:
-- Read tool로 `/Users/musinsa/claude-skills/plugins/slack-search/설치가이드.md` 읽기
+- Read tool로 plugin 디렉토리의 `설치가이드.md` 읽기 (경로는 Claude가 자동으로 해결)

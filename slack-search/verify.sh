@@ -168,11 +168,11 @@ check_token_format() {
     return 1
   fi
 
-  if [[ "$token" =~ ^xoxb- ]]; then
+  if [[ "$token" =~ ^xoxp- ]]; then
     TOKEN_FORMAT_VALID=true
-    log_success "Token format is valid (xoxb-*)"
+    log_success "Token format is valid (xoxp-*)"
   else
-    log_error "Invalid token format (expected xoxb-*)"
+    log_error "Invalid token format (expected xoxp-*)"
     return 1
   fi
 }

@@ -135,8 +135,8 @@ if [ "$TEST_ONLY" = false ]; then
         echo ""
 
         # Validate token format
-        if [[ ! $SLACK_TOKEN =~ ^xoxb- ]]; then
-            echo -e "${RED}❌ Invalid token format. Token should start with 'xoxb-'${NC}"
+        if [[ ! $SLACK_TOKEN =~ ^xoxp- ]]; then
+            echo -e "${RED}❌ Invalid token format. Token should start with 'xoxp-'${NC}"
             exit 1
         fi
     else
@@ -144,11 +144,11 @@ if [ "$TEST_ONLY" = false ]; then
         echo "🔑 Slack Token Setup"
         echo "================================"
         echo ""
-        echo "To get your Slack Bot User OAuth Token:"
+        echo "To get your Slack User OAuth Token:"
         echo "1. Go to https://api.slack.com/apps"
         echo "2. Create a new app or select existing one"
         echo "3. Go to 'OAuth & Permissions'"
-        echo "4. Add these scopes:"
+        echo "4. Add these scopes under 'User Token Scopes':"
         echo "   - channels:history"
         echo "   - channels:read"
         echo "   - groups:history"
@@ -156,15 +156,15 @@ if [ "$TEST_ONLY" = false ]; then
         echo "   - search:read"
         echo "   - users:read"
         echo "5. Install app to workspace"
-        echo "6. Copy 'Bot User OAuth Token' (starts with xoxb-)"
+        echo "6. Copy 'User OAuth Token' (starts with xoxp-)"
         echo ""
 
         # Prompt for token
-        read -p "Enter your Slack Bot User OAuth Token (xoxb-...): " SLACK_TOKEN
+        read -p "Enter your Slack User OAuth Token (xoxp-...): " SLACK_TOKEN
 
         # Validate token format
-        if [[ ! $SLACK_TOKEN =~ ^xoxb- ]]; then
-            echo -e "${RED}❌ Invalid token format. Token should start with 'xoxb-'${NC}"
+        if [[ ! $SLACK_TOKEN =~ ^xoxp- ]]; then
+            echo -e "${RED}❌ Invalid token format. Token should start with 'xoxp-'${NC}"
             exit 1
         fi
 

@@ -7,6 +7,9 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
+| #3813 | 9:38 PM | 🔴 | Removed Incorrectly Nested claude-skills Directory | ~356 |
+| #3812 | " | ✅ | Slack-Search Claude Context File Committed to Mono-Repo | ~296 |
+| #3810 | " | 🟣 | Added Comprehensive Korean Installation Guide for Slack-Search Skill | ~726 |
 | #3807 | 9:37 PM | ✅ | Slack-Search Changelog Committed to Mono-Repo | ~323 |
 | #3806 | " | ✅ | Added License and Git Ignore Rules for slack-search Skill | ~434 |
 </claude-mem-context>

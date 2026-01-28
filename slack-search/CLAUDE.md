@@ -7,7 +7,11 @@
 
 | ID | Time | T | Title | Read |
 |----|------|---|-------|------|
-| #3813 | 9:38 PM | 🔴 | Removed Incorrectly Nested claude-skills Directory | ~356 |
+| #3823 | 9:51 PM | ✅ | Token Example Sanitized in Korean Installation Guide | ~316 |
+| #3822 | " | ✅ | Sanitized Token Example in Korean Installation Guide | ~412 |
+| #3821 | " | 🔵 | Korean Installation Guide Contains Example Token Format | ~287 |
+| #3814 | 9:38 PM | ✅ | Updated CLAUDE.md with Recent Memory Observations | ~435 |
+| #3813 | " | 🔴 | Removed Incorrectly Nested claude-skills Directory | ~356 |
 | #3812 | " | ✅ | Slack-Search Claude Context File Committed to Mono-Repo | ~296 |
 | #3810 | " | 🟣 | Added Comprehensive Korean Installation Guide for Slack-Search Skill | ~726 |
 | #3807 | 9:37 PM | ✅ | Slack-Search Changelog Committed to Mono-Repo | ~323 |

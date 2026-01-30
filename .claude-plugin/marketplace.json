@@ -1,17 +1,21 @@
 {
   "name": "claude-skills",
-  "description": "Collection of Claude Code skills and plugins by zillako",
   "owner": {
     "name": "zillako"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/zillako/claude-skills"
+  "metadata": {
+    "description": "Collection of Claude Code skills and plugins by zillako",
+    "version": "2.0.0"
   },
   "plugins": [
     {
       "name": "slack-search",
-      "source": "plugins/slack-search"
+      "source": "./plugins/slack-search",
+      "description": "Slack 워크스페이스에서 메시지를 조회하고 검색하는 skill. 채널 목록, 메시지 히스토리, DM 조회, 키워드 검색, 스레드 조회, 날짜 필터링을 지원합니다.",
+      "version": "2.0.0",
+      "author": { "name": "zillako" },
+      "category": "productivity",
+      "keywords": ["slack", "search", "messaging", "workspace"]
     }
   ]
 }
